@@ -78,3 +78,14 @@ float: right;}
 .invalid { color: red; font-size:1.8rem}
 .helptext{ font-size:1.4rem;
 color:#000;}
+.navbar-white {
+  background-color:#fff;
+  min-height: 2rem;
+}
+.head{
+  color: darkblue;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 3rem;
+}
+.descript { font-size: 1.8rem;}

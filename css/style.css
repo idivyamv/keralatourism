@@ -1,0 +1,80 @@
+  .carousel-caption {
+    bottom: 12.25rem;
+  }
+  .carousel-caption h2 {
+      font-size:7rem;
+      font-weight: 400;
+  }
+  .carousel-caption p {
+    font-size: 2.2rem;
+    font-weight: normal;
+  }
+  p {
+    font-size: 2.8rem;
+  }
+  .btn.btn-primary.navbar-btn {
+    font-size: 2.5rem;
+  }
+  .nav-link:hover {
+    text-decoration: none ;
+  }
+  .carousel-inner .item{
+      margin: auto;
+      padding: auto;
+  }
+  .carousel-item {
+      min-height: 500px;
+  }
+  .district_link .card-title{
+    position: absolute;
+    top: 6rem;
+    left: 12rem;
+    text-align: center;
+    margin-top: 0rem;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 3rem !important;
+  } 
+  .card-body p{
+      font-size:1.8rem ;
+  }
+  .card:hover {
+    background: #eed04a;
+  color: #fff;
+  transform: scale(1.1);
+  z-index: 9;
+}
+.card{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+  /* 
+  
+  .card p{
+      font-size:1.5rem;
+  }
+ 
+  .col {
+    margin-top: 3rem;
+  }
+  .trvndrm{ left:auto} */
+  .form-control {
+    font-size: 1.8rem;
+  }
+  .red{ color: red;
+  font-size: 1.8rem;
+float: right;}
+.btn { font-size: 1.8rem !important;}
+.content-center {
+  align-content: center;
+  display: grid;
+  text-align: center;
+  margin-bottom: 10rem;
+  margin-top: 4rem;
+}
+.navbar-light .navbar-brand{
+  color: #fff !important ;
+}
+.invalid { color: red;}
+.helptext{ font-size:1.4rem;
+color:#000;}

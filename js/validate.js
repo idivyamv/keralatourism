@@ -94,7 +94,6 @@ function passwordCheck() {
 }
 function validatelogin(){
    // var mailformat  = '/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(\.[a-z]{2,3}?)$/';
-   
     var email       = document.getElementById('emailId');
     var pswd        = document.getElementById('Password');   
     if (!(email.checkValidity())) {

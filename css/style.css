@@ -75,6 +75,6 @@ float: right;}
 .navbar-light .navbar-brand{
   color: #fff !important ;
 }
-.invalid { color: red;}
+.invalid { color: red; font-size:1.8rem}
 .helptext{ font-size:1.4rem;
 color:#000;}

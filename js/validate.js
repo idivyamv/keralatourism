@@ -21,7 +21,23 @@ function validate(event)
     else{
         phoneno.classList.add("invalid"); 
         return false;
-    }  */
+    }  
+
+*/
+    var inputs = document.getElementById("my-form").elements;
+    // Iterate over the form controls
+    for (i = 0; i < inputs.length; i++) {
+        if (inputs[i].nodeName === "INPUT") {       
+            var value = inputs[i].value;
+            if (!(inputs[i].checkValidity()) || value.trim()=='' ) {
+                inputs[i].reportValidity();
+                inputs[i].classList.add("invalid"); 
+                return false;
+            }
+            else {  inputs[i].classList.remove("invalid"); }
+        }
+    }
+
     var pswd_check = 0;                        
     const inpObj =  document.querySelector("#password");
     const inpcnfmObj =  document.getElementById("confirmpassword");
@@ -77,18 +93,18 @@ function passwordCheck() {
     }
 }
 function validatelogin(){
-    var mailformat  = '/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(\.[a-z]{2,3}?)$/';
+   // var mailformat  = '/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(\.[a-z]{2,3}?)$/';
+   
     var email       = document.getElementById('emailId');
-    if(mailformat.test(email.value))
-    {
-        email.style.border="none";
-
-    }
-    else{
-        email.style.border="1px solid red";
+    var pswd        = document.getElementById('Password');   
+    if (!(email.checkValidity())) {
+        email.reportValidity();
         return false;
-    } 
-    
-  
+      }
+    else if(!(pswd.checkValidity())){
+        pswd.reportValidity();
+        return false
+    }
+    else return true;
 
 }
